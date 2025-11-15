@@ -1,0 +1,201 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* Header styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Navigation styles */
+.topnav {
+    background-color: #444;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Content styles */
+.content {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left {
+    flex: 2;
+}
+
+.right {
+    flex: 1;
+}
+
+.box {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.box h1 {
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.box p {
+    color: #666;
+    font-style: italic;
+}
+
+.War {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #04AA6D;
+    padding-bottom: 10px;
+}
+
+.right p {
+    margin-bottom: 15px;
+}
+
+.right p a {
+    color: #333;
+    text-decoration: none;
+}
+
+.right p a:hover {
+    color: #04AA6D;
+    text-decoration: underline;
+}
+
+.card {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.footer1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logof {
+    font-size: 2em;
+}
+
+.footer2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer2 p {
+    margin: 10px 0;
+}
+
+.footer3 {
+    text-align: center;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    
+    .topnav a {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .header {
+        padding: 15px 0;
+    }
+    
+    .logo {
+        font-size: 2em;
+    }
+}
