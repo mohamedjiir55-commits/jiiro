@@ -1,0 +1,37 @@
+BBC Website Deployment Instructions
+
+1. Create a GitHub Account:
+   - Go to https://github.com/
+   - Click "Sign up" and follow the instructions
+
+2. Create a New Repository:
+   - After logging in, click the "+" icon in the top right
+   - Select "New repository"
+   - Name it "yourusername.github.io" (replace "yourusername" with your actual GitHub username)
+   - Make sure to select "Public"
+   - Don't initialize with a README
+
+3. Upload Your Files:
+   - On your repository page, click "Add file" then "Upload files"
+   - Drag and drop all your files:
+     * index.html
+     * news.html
+     * sport.html
+     * business.html
+     * styles.css
+     * 404.html
+     * .gitattributes
+   - Click "Commit changes"
+
+4. Enable GitHub Pages:
+   - In your repository, click "Settings" (gear icon)
+   - Scroll down to "Pages" in the left sidebar
+   - Under "Source", select "Deploy from a branch"
+   - Select "main" branch and "/ (root)" folder
+   - Click "Save"
+
+5. View Your Website:
+   - After a few minutes, your site will be live at https://yourusername.github.io
+   - Replace "yourusername" with your actual GitHub username
+
+Your website is now hosted for free!

@@ -3,103 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - News Portal</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>BBC - Homepage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header section -->
-        <div class="header">
-            <h1 class="logo">NewsPortal</h1>
-        </div>
-
-        <!-- Navigation bar -->
-        <div class="topnav">
-            <a href="index.html" class="active">News</a>
-            <a href="sports.html">Sports</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
-
-        <!-- Main content section -->
-        <div class="content clear">
-            <div class="left"> 
-                <div class="box">
-                    <a href="facebook.html">
-                        <img src="images/facebook.jpg" alt="Facebook and Instagram news">
-                        <h1>Facebook and Instagram get rid of fact checkers</h1>
-                    </a>
-                    <p>December 10, 2024</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="https://placehold.co/120x30/FF0000/FFFFFF?text=BBC+NEWS" alt="BBC Logo" class="logo-img">
                 </div>
-
-                <div class="box">
-                    <a href="giuliani.html">
-                        <img src="images/giuliani.webp" alt="Giuliani court case">
-                        <h1>Giuliani held in contempt of court in $148m defamation case</h1>
-                    </a>
-                    <p>December 10, 2024</p>
-                </div>
-
-                <div class="box">
-                    <a href="carney.html">
-                        <img src="images/carney.jpg" alt="Canadian politics">
-                        <h1>Carney 'considering' campaign to replace Canada's Trudeau</h1>
-                    </a>
-                    <p>December 10, 2024</p>
-                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                    <li><a href="business.html">Business</a></li>
+                </ul>
             </div>
-
-            <div class="right">
-                <h1 class="War">Top Stories</h1>
-
-                <p><a href="#">What does Ankara's peace deal with Somalia mean for Ethiopia?</a></p>
-                <p><a href="#">Egyptian forces join African Union mission in Somalia</a></p>
-                <p><a href="#">What does Ankara's peace deal with Somalia mean for Ethiopia?</a></p>
-                <p><a href="#">What does Ankara's peace deal with Somalia mean for Ethiopia?</a></p>
-                <p><a href="#">What does Ankara's peace deal with Somalia mean for Ethiopia?</a></p>
-
-                <h1>More News</h1>
-
-                <div class="card">
-                    <a href="french.html">
-                        <img src="images/french.jpg" alt="French politician">
-                        <h3>French far-right politician Jean-Marie Le Pen dies at 96</h3>
-                    </a>
-                </div>
-
-                <div class="card">
-                    <a href="trump.html">
-                        <img src="images/trump.jpg" alt="Trump Jr in Greenland">
-                        <h3>Trump Jr arrives in Greenland after dad says US should own the territory</h3>
-                    </a>
-                </div>
-
-                <div class="card">
-                    <a href="hmpv.html">
-                        <img src="images/hmpv.jpg" alt="HMPV virus">
-                        <h3>What you need to know about HMPV</h3>
-                    </a>
-                </div>
+            <div class="nav-right">
+                <button class="signin-btn">Sign in</button>
             </div>
         </div>
+    </nav>
 
-        <!-- Footer section -->
-        <div class="footer clear">
-            <div class="footer1">
-                <h1 class="logof">NewsPortal</h1>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-image">
+                <img src="https://placehold.co/976x549/CCCCCC/333333?text=Breaking+News" alt="Breaking News" class="hero-img">
+                <div class="hero-text">
+                    <h1>Breaking News: Major Event Happens</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Grid -->
+        <section class="news-grid">
+            <div class="news-card">
+                <img src="https://placehold.co/320x200/CCCCCC/333333?text=World+News" alt="News 1" class="news-img">
+                <div class="news-content">
+                    <span class="category">World</span>
+                    <h3>Global Summit Addresses Climate Change</h3>
+                    <p>World leaders gather to discuss urgent environmental policies and carbon reduction targets.</p>
+                </div>
             </div>
 
-            <div class="footer2">
-                <p>Terms of Use &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; About NewsPortal</p>
-                <hr>
-                <p>Privacy Policy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Footer Content</p>
-                <hr>
+            <div class="news-card">
+                <img src="https://placehold.co/320x200/CCCCCC/333333?text=Technology" alt="News 2" class="news-img">
+                <div class="news-content">
+                    <span class="category">Technology</span>
+                    <h3>New Tech Innovation Changes Industry</h3>
+                    <p>Revolutionary breakthrough promises to transform how we interact with digital devices.</p>
+                </div>
             </div>
 
-            <div class="footer3">
-                <p>&copy; 2025 Get quality news you'll love</p>
+            <div class="news-card">
+                <img src="https://placehold.co/320x200/CCCCCC/333333?text=Sports" alt="News 3" class="news-img">
+                <div class="news-content">
+                    <span class="category">Sports</span>
+                    <h3>Championship Finals Draw Record Viewership</h3>
+                    <p>Last night's match becomes most-watched sporting event in television history.</p>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <img src="https://placehold.co/320x200/CCCCCC/333333?text=Health" alt="News 4" class="news-img">
+                <div class="news-content">
+                    <span class="category">Health</span>
+                    <h3>Medical Research Yields Promising Results</h3>
+                    <p>Clinical trials show significant improvement for patients with rare conditions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secondary News Section -->
+        <section class="secondary-news">
+            <div class="secondary-news-item">
+                <img src="https://placehold.co/240x100/CCCCCC/333333?text=Economy" alt="Secondary News 1" class="secondary-img">
+                <div class="secondary-content">
+                    <h3>Economy Shows Signs of Recovery</h3>
+                    <p>Latest figures indicate positive growth trends across multiple sectors.</p>
+                </div>
+            </div>
+
+            <div class="secondary-news-item">
+                <img src="https://placehold.co/240x100/CCCCCC/333333?text=Education" alt="Secondary News 2" class="secondary-img">
+                <div class="secondary-content">
+                    <h3>Education Reforms Announced</h3>
+                    <p>New initiatives aim to improve student outcomes and teacher support.</p>
+                </div>
+            </div>
+
+            <div class="secondary-news-item">
+                <img src="https://placehold.co/240x100/CCCCCC/333333?text=Culture" alt="Secondary News 3" class="secondary-img">
+                <div class="secondary-content">
+                    <h3>Cultural Festival Celebrates Diversity</h3>
+                    <p>Annual event brings communities together through art, music, and food.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://placehold.co/120x40/FF0000/FFFFFF?text=BBC+NEWS" alt="BBC Logo" class="footer-logo-img">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                    <li><a href="business.html">Business</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 BBC. The BBC is not responsible for the content of external sites.</p>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
